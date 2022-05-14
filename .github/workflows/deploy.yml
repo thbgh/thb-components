@@ -1,4 +1,6 @@
-name: Build and Deploy
+# use this action(https://github.com/JamesIves/github-pages-deploy-action)
+
+name: page Build and Deploy
 on:
   push:
     branches:
@@ -28,3 +30,4 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist_docs # The folder the action should deploy.
+          clean: true
