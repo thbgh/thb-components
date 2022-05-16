@@ -11,11 +11,14 @@ interface Props {
    * 点击事件  有交互的时候用这个
    */
   onClick?: Function;
+  /**
+   * 其它antd组件属性
+   */
+  [key: string]: any;
 }
 
 /**
- * Button 组件
- * @link [antd button](https://ant.design/components/button-cn/)
+ * [antd button](https://ant.design/components/button-cn/)
  */
 
 function BaseButton(props: Props) {

@@ -84,7 +84,7 @@ npm run release -- --release-as <版本号>
 成功之后把 tag 推到远程
 
 ```
-git push --follow-tags origin master
+git push --follow-tags origin main
 ```
 
 ## 七、发布到 npm

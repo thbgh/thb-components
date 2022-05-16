@@ -27,11 +27,14 @@ interface Props {
    * 点击取消回调
    */
   onCancel?: (e: React.MouseEvent<HTMLElement>) => void;
+  /**
+   * 其它antd组件属性
+   */
+  [key: string]: any;
 }
 
 /**
- * Modal 组件
- * @link [antd modal](https://ant.design/components/modal-cn/)
+ * [antd modal](https://ant.design/components/modal-cn/)
  */
 
 function BaseModal(props: Props) {
@@ -47,6 +50,7 @@ function BaseModal(props: Props) {
       closeIcon={<span className="base-closebtn">×</span>}
       onOk={onOk}
       onCancel={onCancel}
+      {...props}
     />
   );
 }
